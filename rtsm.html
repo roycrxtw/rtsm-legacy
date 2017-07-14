@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Roy Lu.">
+<title>高速公路速度路況查詢 Real-time Traffic Speed Monitor of Motorways in Taiwan</title>
+<link rel="stylesheet" type="text/css" href="rtsm.css">
+</head>
+
+<body>
+
+<div id='loader'></div>
+	
+<div class="menu-container">
+
+<div class="block-container">
+
+<div class='app-title block'>國道速度資訊RTSM</div>
+
+<div class="block block-motorway-label">選擇國道</div>
+<select id="menu-motorways" class="block block-motorway-menu"> 
+	<option value="m1">國道1號</option>
+	<option value='m1e'>國道1號高架段</option>
+	<option value='m2'>國道2號</option>
+	<option value='m3'>國道3號</option>
+	<option value="m3a">國道3甲</option>
+	<option value="t2f">港西聯外道路(台2己線)</option>
+	<option value="nar">南港聯絡道</option>
+	<option value="m4">國道4號</option>
+	<option value="m5">國道5號</option>
+	<option value="m6">國道6號</option>
+	<option value='m8'>國道8號</option>
+	<option value="m10">國道10號</option>
+	<option value="e62">快速公路62號</option>
+	<option value="e64">快速公路64號</option>
+	<option value="e66">快速公路66號</option>
+	<option value="e68">快速公路68號</option>
+	<option value="e72">快速公路72號</option>
+	<option value="e74">快速公路74號</option>
+	<option value="e76">快速公路76號</option>
+	<option value="e78">快速公路78號</option>
+	<option value="e82">快速公路82號</option>
+	<option value="e84">快速公路84號</option>
+	<option value="e86">快速公路86號</option>
+	<option value="e88">快速公路88號</option>
+</select>
+
+<div class="block tile-submit" id="btn-search" onclick="submit()">Search</div>
+
+</div><!-- end of block-container -->
+
+<div class='shortcut-container'>
+<div class="tile-shortcut bg-pink" data-mid='m1'>M1<br/>國道1號</div><div class="tile-shortcut bg-darkpink" data-mid='m3'>M3<br/>國道3號</div><div class="tile-shortcut bg-orange" data-mid='m5'>M5<br/>國道5號</div>
+<div class='demo-tile'><div class="demo-header">圖例</div><span class="goodSpeed demo-block">速度良好</span><span class="mediumSpeed demo-block">速度一般</span><span class="badSpeed demo-block">交通壅塞</span></div>
+</div><!-- end of shortcut-container -->
+
+</div><!-- end of menu-container-->
+
+
+<div id="speedDataTable"></div>
+
+<div id="btnRefresh">Refresh</div>
+
+
+<footer>
+<hr/>
+by <a href='https://royvbtw.uk'>Roy Lu</a>, royvbtw@github 2017
+</footer>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="rtsm.js"></script>
+<noscript>This site use javascript. Please enable javascript.</noscript>
+
+</html>

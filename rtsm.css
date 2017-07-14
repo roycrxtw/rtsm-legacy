@@ -1,0 +1,405 @@
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background: snow ;
+	margin: 0px;
+	padding: 0px;
+	
+	font-size: 16px;
+	font-family: "Microsoft JhengHei";
+}
+
+footer{
+	text-align: center;
+}
+
+select{
+	border: 0px;
+	outline-width: 0px;
+	font-family: "Microsoft JhengHei";
+	cursor: pointer;
+	padding-left: 20px;
+}
+
+.bg-blue{background-color: blue;}
+.bg-lightblue{background-color: lightblue;}
+.bg-orange{background-color: orange;}
+.bg-darkorange{background-color: #cc8500;}
+.bg-pink{background-color: pink;}
+.bg-darkpink{background-color: #ff8095;}
+.bg-gray{background-color: gray;}
+
+.app-title{
+	width: 100%;
+	background-color: peru;
+}
+@media only screen and (min-width: 720px){
+	.app-title{
+		position: absolute;
+		width: 410px;
+		height: 120px;
+		left: 0;
+		top: 0;
+	}
+}
+
+.block{
+	display: flex;
+	position: relative;
+	margin: 10px auto;
+	justify-content: center;
+	align-items: center;
+	
+	font-size: medium;
+	color: snow;
+	transition: all 0.8s;
+}
+@media only screen and (min-width: 720px){
+	.block{
+		position: absolute;
+		margin: 0px auto;
+		font-size: large;
+	}
+}
+
+.demo-tile{
+	display: block;
+	position: relative;
+	width: 210px;
+	height: 100px;
+	margin: 10px auto;
+	border: 0px solid yellow;
+}
+@media only screen and (min-width: 720px){
+	.demo-tile{
+		float: right;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.demo-block{
+	display: flex;
+	position: absolute;
+	top: 30px;
+	
+	width: 70px;
+	height: 70px;
+	padding: 15px;
+	color: snow;
+	cursor: default;
+	
+	justify-content: center;
+	align-items: center;
+}
+
+.goodSpeed{
+	left: 0;
+	background-color: darkgreen;
+}
+.mediumSpeed{
+	left: 70px;
+	background-color: blue;
+}
+.badSpeed{
+	left: 140px;
+	background-color: red;
+}
+
+.demo-header{
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+	width: 210px;
+	line-height: 30px;
+	height: 30px;
+	border: 0px solid snow;
+	padding: 0;
+	color: snow;
+	text-align: center;
+	background-color: gray;
+}
+
+.d-row{
+	display: flex;
+	width: 100%;
+	margin: 0px auto;
+	border: 0px solid blue;
+	color: snow;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.8s;
+}
+
+.d-row:hover{
+	opacity: 0.9;
+	background-color: beige;
+}
+
+.d-name{
+	display: inline-flex;
+	width: 50%;
+	height: 60px;
+	color: black;
+	margin: 5px;
+	padding-left: 15px;
+	border-left: 8px solid gray;
+	border-bottom: 2px solid gray;
+	align-items: center;
+}
+
+.d-speed{
+	display: inline-flex;
+	width: 60px;
+	height: 60px;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+}
+
+.direction-label{
+	display: inline-flex;
+	width: 60px;
+	height: 60px;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+	background-color: darkslategrey;
+	color: snow;
+}
+
+@media only screen and (min-width: 720px){
+	.d-name{
+		height: 60px;
+		width: 40%;
+		margin: 4px;
+		padding-left: 30px;
+		border-left: 20px solid gray;
+		border-bottom: 2px dotted gray;
+		align-items: center;
+		
+		transition: all 0.8s;
+	}
+	.d-name:hover{
+		border-left: 20px solid red;
+		border-bottom: 2px solid red;
+	}
+	.d-speed{
+		display: inline-flex;
+		height: 60px;
+		width: 60px;
+		margin: 4px;
+		border: 0px solid orange;
+		
+		color: snow;
+	}
+}
+
+.menu-container{
+	width: 100%;
+	background-color: rgb(50, 50, 50);
+	padding: 20px;
+	margin: 0px auto;
+	
+}
+
+.block-container{
+	display: block;
+	position: relative;
+	width: 100%;
+	border: 0px solid snow;
+	padding: 0px;
+	margin: 0px auto;
+}
+@media only screen and (min-width: 720px){
+	.block-container{
+		display: table;
+		position: relative;
+		width: 540px;
+		height: 270px;
+		border: 0px solid snow;
+		padding: 0;
+		margin: 10px auto;
+	}
+}
+
+.tile-shortcut{
+	display: inline-flex;
+	position: relative;
+	padding: 0px;
+	width: 100px;
+	height: 100px;
+	
+	margin: 0 10px 10px 0;
+	border: 0px solid rgb(50, 50, 50);
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: medium;
+	color: snow;
+	transition: all 0.8s;
+}
+@media only screen and (min-width: 720px){
+	.tile-shortcut{
+		display: inline-flex;
+		position: relative;
+	}
+}
+
+.tile-shortcut:hover{ opacity: 0.8; }
+
+.shortcut-container{
+	display: block;
+	position: relative;
+	width: 100%;
+	color: snow;
+}
+@media only screen and (min-width: 720px){		/* For desktop*/
+	.shortcut-container{
+		display: block;
+		position: relative;
+		border: 0px solid snow;
+		width: 540px;
+		margin: 0 auto;
+	}
+}
+
+.block-motorway-label{
+	width: 100%;
+	height: 40px;
+	cursor: default;
+	user-select: none;
+	background-color: rgba(160, 90, 160, 1);
+}
+@media only screen and (min-width: 720px){
+	.block-motorway-label{
+		top: 130px;
+		left: 0;
+		width: 120px;
+		height: 120px;
+	}
+}
+
+.block-motorway-menu{
+	width: 100%;
+	height: 60px;
+	background-color: rgba(190, 120, 190, 1);
+}
+
+.block-motorway-menu:hover{
+	background-color: rgba(230, 160, 230, 1);
+}
+
+@media only screen and (min-width: 720px){
+	.block-motorway-menu{
+		top: 130px;
+		left: 130px;
+		width: 410px;
+		height: 120px;
+	}
+}
+
+.tile-submit{
+	width: 100%;
+	height: 60px;
+	color: snow;
+	background-color: rgb(174, 146, 170);
+	cursor: pointer;
+}
+
+.tile-submit:hover{
+	background-color: rgb(204, 186, 215);
+}
+
+@media only screen and (min-width: 720px){
+	.tile-submit{
+		top: 0px;
+		left: 420px;
+		width: 120px;
+		height: 120px;
+	}
+}
+
+.shortcut-title{
+	display: flex;
+	width: 180px;
+	height: 40px;
+	border: 5px solid rgb(50, 50, 50);
+	background-color: darkorange;
+	align-items: center;
+	padding-left: 10px;
+	font-size: large;
+}
+
+.motorwayName{
+	color: slategrey;
+	font-size: larger;
+}
+
+.time{
+	display: table-caption;
+	color: black;
+	text-align: center;
+	font-size: smaller;
+}
+
+/* ids */
+#btnRefresh{
+	display: flex;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	width: 70px;
+	height: 70px;
+	border: 1px solid gray;
+	background-color: rgb(50, 50, 30);
+	color: snow;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+#speedDataTable{
+	display: table;
+	margin: 20px auto;
+	width: 90%;
+	background-color: snow;
+	cursor: pointer;
+	border: 0px solid blue;
+	font-size: 1rem;
+}
+@media only screen and (min-width: 720px){
+	#speedDataTable{
+		width: 60%;
+	}
+}
+
+#loader {
+	display: none;
+	position: fixed;
+	left: 48vw;
+	top: 48vh;
+	border: 10px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 10px solid grey;
+	border-bottom: 10px solid slategrey;
+	width: 4vw;
+	height: 4vw;
+	z-index: 100;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}

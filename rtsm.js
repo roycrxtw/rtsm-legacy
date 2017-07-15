@@ -61,7 +61,7 @@ function doSubmit(mid) {
 	document.getElementById('btn-search').textContent = 'loading...';
 	document.getElementById('loader').style.display = 'block';
 	
-	var url = "http://royvbtw.uk:3003/data/" + mid;
+	var url = "https://rtsmapi.royvbtw.uk/data/" + mid;
 	var xhr = new XMLHttpRequest();
 	xhr.open('GET', url, true);
 	xhr.timeout = TIMEOUT;

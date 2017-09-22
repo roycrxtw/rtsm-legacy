@@ -3,6 +3,15 @@
 	box-sizing: border-box;
 }
 
+a{
+	color: violet;
+	text-decoration: none;
+	transition: all 700ms;
+}
+a:hover{
+	color: orange;
+}
+
 body{
 	background: snow ;
 	margin: 0px;
@@ -14,6 +23,7 @@ body{
 
 footer{
 	text-align: center;
+	margin-bottom: 70px;
 }
 
 select{
@@ -231,9 +241,8 @@ select{
 	display: inline-flex;
 	position: relative;
 	padding: 0px;
-	width: 100px;
-	height: 100px;
-	
+	width: 25vw;
+	height: 25vw;	
 	margin: 0 10px 10px 0;
 	border: 0px solid rgb(50, 50, 50);
 	justify-content: center;
@@ -245,8 +254,9 @@ select{
 }
 @media only screen and (min-width: 720px){
 	.tile-shortcut{
-		display: inline-flex;
 		position: relative;
+		width: 100px;
+		height: 100px;
 	}
 }
 
@@ -337,7 +347,8 @@ select{
 
 .motorwayName{
 	color: slategrey;
-	font-size: larger;
+	font-size: x-large;
+	font-weight: 900;
 }
 
 .time{
@@ -356,14 +367,21 @@ select{
 	width: 70px;
 	height: 70px;
 	border: 1px solid gray;
-	background-color: rgb(50, 50, 30);
+	border-radius: 5px;
+	background-color: slategrey;
 	color: snow;
+	font-weight: 100;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
+	transition: all 700ms;
+}
+#btnRefresh:hover{
+	background-color: rgb(50, 50, 30);
 }
 
-#speedDataTable{
+
+#trafficTable{
 	display: table;
 	margin: 20px auto;
 	width: 90%;
@@ -373,7 +391,7 @@ select{
 	font-size: 1rem;
 }
 @media only screen and (min-width: 720px){
-	#speedDataTable{
+	#trafficTable{
 		width: 60%;
 	}
 }
@@ -385,13 +403,13 @@ select{
 	top: 48vh;
 	border: 10px solid #f3f3f3;
 	border-radius: 50%;
-	border-top: 10px solid grey;
-	border-bottom: 10px solid slategrey;
+	border-top: 5px solid lightsalmon;
+	border-bottom: 5px solid lightsalmon;
 	width: 4vw;
 	height: 4vw;
 	z-index: 100;
 	-webkit-animation: spin 2s linear infinite;
-	animation: spin 2s linear infinite;
+	animation: spin 1s linear infinite;
 }
 
 @-webkit-keyframes spin {
